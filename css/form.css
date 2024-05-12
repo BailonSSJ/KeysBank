@@ -1,0 +1,463 @@
+/* GENERIC FORM */
+form {
+    font-size: 0.6rem;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.div_gen-pass_button {
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: var(--secundary_blue);
+}
+
+fieldset fieldset {
+    background-color: ghostwhite;
+}
+
+legend {
+    background-color: ghostwhite;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+div#category {
+    margin: 4px 15px;
+}
+
+.div_gen_pass {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form#form-view a {
+    color: rgb(111, 153, 184);
+    text-decoration: underline;
+}
+form#form-view a:visited {
+    color: blueviolet;
+}
+
+#form-add fieldset, form#platform fieldset {
+    margin: 5px 0;
+}
+
+#form-add input, form#platform input {
+    border: 1px solid black;
+    height: 26px;
+}
+form#platform input#logo {
+    border: none;
+}
+
+form#form-add .accept, form#platform .accept {
+    height: 35px;
+    width: 85px;
+}
+
+form.perfil-info input[type='text'],
+form.perfil-info input[type='mail'],
+form.perfil-info input[type='number'],
+form.perfil-info input[type='password'],
+form.perfil-info #name {
+    height: 18px;
+    margin: 0 auto;
+    width: 80%;
+}
+form.perfil-info input[type='number'] {
+    width: 15%;
+}
+form.perfil-info .div_pass {
+    align-items: center;
+    display: flex;
+}
+form.perfil-info .div_pass input {
+    margin: 0 10px;
+}
+
+/* DIVs con diseño de botones */
+/* Div que simula la forma de un botón de la clase cancel */
+.div-cancel_button {
+    align-items: center;
+    background-color: rgb(190, 30, 68);
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    height: 14px;
+    justify-content: center;
+    padding: 8px;
+    width: 100px;
+}
+.div-cancel_button:hover {
+    background-color: rgb(190, 30, 68);;
+    color: black;
+}
+.div-cancel_button:active {
+    background-color: black;
+    border: 2px solid rgb(190, 30, 68);
+    color: rgb(190, 30, 68);;
+}
+/* Div que simula la forma de un botón de la clase copy */
+.div-copy_button {
+    align-items: center;
+    background-color: darkorange;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    height: 18px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 4px;
+    width: 73px;
+}
+.div-copy_button:hover {
+    background-color: orange;
+    color: black;
+}
+.div-copy_button:active {
+    background-color: black;
+    border: 2px solid orange;
+    color: orange;
+}
+
+select {
+    border: 1px solid black;
+    font-weight: bold;
+    height: 30px;
+}
+select:focus {
+    outline: none;
+}
+select:hover {
+    cursor: pointer;
+}
+option:hover {
+    font-weight: bold;
+}
+
+form .required {
+    background-color: lightgoldenrodyellow;
+}
+
+::placeholder {
+    color: rgb(50,50,50);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.error::placeholder {
+    color: white;
+}
+
+.text-error {
+    color: red;
+}
+.text-green {
+    color: rgba(0, 200, 0);
+}
+
+form fieldset span.text-error {
+    color: rgb(215,0,0);
+    font-size: 1rem;
+    padding: 1px;
+    width: 100%;
+}
+
+span.text-error {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-error {
+    background-color: rgba(255, 0, 0, 0.4);
+    border: 2px solid red;
+    color: white;
+}
+.input-correct {
+    background-color: rgba(0, 200, 0, 0.4);
+    border: 2px solid yellowgreen;
+    color: white;
+}
+
+input#cp_pss {
+    margin-top: 2px;
+    height: 32px;
+}
+
+/*  */
+.div_select, .div_input, .div_textarea {
+    display: flex;
+    flex-flow: column;
+    font-weight: bold;
+    margin: 6px 0;
+    row-gap: 2px;
+}
+.div_select select, .div_select input {
+    margin: 0 auto;
+}
+
+.div_select select {
+    width: 90%;
+}
+
+.div_checkbox {
+    align-items: center;
+    column-gap: 5px;
+    display: flex;
+}
+
+.div_pass {
+    align-items: center;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 25px auto;
+}
+
+#name {
+    margin: 0 auto;
+    width: 86%;
+}
+
+#info, #notes {
+    border: 1px solid black;
+    display: flex;
+    height: 80px;
+    padding: 5px;
+}
+
+#info:hover, #notes:hover {
+    cursor: initial;
+}
+
+form span.display_textarea_char {
+    text-align: right;
+}
+
+/* NAME ACCOUNTS REPEAT */
+#acc_name_rep a.account_used {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+}
+
+.name_accounts_repeat {
+    background-color: ghostwhite;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+    height: 100px;
+    overflow-y: auto;
+    margin: 0 auto;
+    scrollbar-width: none;
+    width: 98%;
+}
+.account_used {
+    padding: 5px;
+}
+.account_used:hover {
+    cursor: pointer;
+}
+.account_used:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}
+.account_used:nth-child(even) {
+    background-color: lightgray;
+    color: black;
+}
+
+/* FIELDSET GEN_PASS */
+fieldset.gen_pass {
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+}
+fieldset.gen_pass label {
+    align-items: center;
+    column-gap: 5px;
+    display: flex;
+}
+fieldset input[type="number"] {
+    width: 50px;
+}
+
+
+/* STRONG PASSWORD */
+.special_message {
+    align-items: center;
+    display: flex;
+}
+.container-data .special_message {
+    margin: 5px auto;
+}
+div.special_message span.dangerous, div.special_message span.weak, div.special_message span.normal, div.special_message span.strong, div.special_message span.strongest {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+div.special_message span.dangerous, div.special_message span.strongest {
+    text-transform: uppercase;
+}
+div.special_message span.weak, div.special_message span.normal, div.special_message span.strong {
+    text-transform: capitalize;
+}
+div.special_message span.dangerous {
+    color: red;
+}
+div.special_message span.weak {
+    color: orangered;
+}
+div.special_message span.normal {
+    color: orange;
+}
+div.special_message span.strong {
+    color: yellowgreen;
+}
+div.special_message span.strongest {
+    color: limegreen;
+}
+
+/* EYE FORM CHECKBOX */
+.info {
+    align-items: center;
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 25px auto;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.eye input[type='checkbox'] {
+    display: none;
+}
+
+.eye_slash input[type='checkbox'] {
+    display: none;
+}
+
+.eye, .eye_slash {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+}
+
+.eye {
+    background-image: url(../img/icon/eye.svg);
+}
+
+.eye_slash {
+    background-image: url(../img/icon/eye_slash.svg);
+}
+
+.eye, .eye_slash {
+    cursor: pointer;
+}
+
+.box-info{
+    width: fit-content;
+}
+
+
+@media only screen and (min-width: 550px) {
+    header .logo {
+        width: 200px;
+    }
+    .logo {
+        width: 250px;
+    }
+    form, span.text-error, ::placeholder {
+        font-size: 1rem;
+    }
+    .div-cancel_button {
+        height: 18px;
+    }
+    .div-copy_button,.div-cancel_button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    form#form-view, form#form-add, form#platform {
+        font-size: 1rem;
+    }
+    div#category {
+        margin: 2px 0;
+    }
+    .div_select, .div_input {
+        align-items: center;
+        column-gap: 15px;
+        display: grid;
+        grid-template-columns: 110px auto auto;
+        justify-content: start;
+    }
+    .div_select select {
+        width: 200px;
+    }
+    .div_input input {
+        width: 192px;
+    }
+    .div_pass {
+        column-gap: 10px;
+    }
+    .div_gen_pass {
+        justify-content: start;
+    }
+    #name {
+        width: 192px;
+    }
+    /* .info {
+        margin-left: 10px;
+    } */
+}
+@media only screen and (min-width: 730px) {
+    .div_select, .div_input {
+        grid-template-columns: 130px auto auto;
+    }
+    form#form-view .div_textarea {
+        column-gap: 0;
+        grid-template-columns: 125px auto;
+    }
+    .div_textarea {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 130px auto;
+        column-gap: 14px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    fieldset.password input[type="text"], fieldset.password input[type="password"] {
+        width: 400px;
+    }
+    .div_select, .div_input {
+        grid-template-columns: 180px auto auto;
+    }
+    .div_textarea {
+        grid-template-columns: 180px auto;
+    }
+    .view_account-pass {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    fieldset.password input[type="text"], fieldset.password input[type="password"] {
+        width: 750px;
+    }
+}

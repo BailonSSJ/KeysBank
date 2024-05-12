@@ -1,0 +1,223 @@
+/* HEADER FORM */
+header form {
+    margin: 5px;
+}
+
+/* LOGOUT BUTTON */
+header form input[type="submit"] {
+    background-color: rgb(190, 30, 68);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 4px;
+}
+header form input[type="submit"]:hover {
+    background-color: black;
+    border: 2px solid rgb(190, 30, 68);
+    color: rgb(190, 30, 68);
+}
+
+/* LOGIN SCREEN (BACKGROUND) */
+.login_screen {
+    align-items: center;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#login_screen > div {
+    flex-grow: 1;
+}
+#login_screen .form_login {
+    flex-grow: 2;
+}
+#login_screen .container-box {
+    flex-grow: 2;
+}
+
+.logged {
+    animation: logged 1s 2s forwards;
+}
+
+@keyframes logged {
+    from {filter: opacity(1);}
+    to {filter: opacity(0);}
+}
+
+/*  CHANGE ADMIN PASS */
+.change_admin_pass {
+    align-items: center;
+    background-color: rgb(75,75,75);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    height: 88vh;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.change_admin_pass h2 {
+    font-size: 18px;
+}
+.change_admin_pass p {
+    font-size: 12px;
+    text-align: center;
+}
+.change_admin_pass a {
+    font-size: 1.1rem;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+.change_admin_pass ol {
+    font-size: 12px;
+    margin: 0 auto;
+}
+.change_admin_pass .index-message {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+/* REGISTER-LOGIN FORM */
+a.register, a.back-login {
+    display: block;
+    color: orange;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin: 3px 8px;
+}
+
+a.register {
+    text-align: right;
+}
+
+a.back-login {
+    color: orange;
+    text-align: left;
+}
+
+a.register:active, a.back-login:active {
+    color: white;
+}
+
+.form_login {
+    display: flex;
+    flex-flow: column;
+}
+
+#login_screen input {
+    background-color: ghostwhite;
+    border: 3px solid  rgb(150,150,150);
+    color: black;
+    height: 29px;
+    margin: 5px 0;
+    padding: 0;
+    width: 224px;
+}
+#login_screen input:focus {
+    outline: none;
+}
+#login_screen input:hover {
+    border: 3px solid darkorange;
+}
+#login_screen input:focus {
+    border: 3px solid rgb(122, 192, 17);
+}
+#login_screen input[type="submit"] {
+    background-color: rgb(50,50,50);
+    border: 3px solid white;
+    color: white;
+    font-size: 1.2rem;
+    height: 35px;
+    margin-top: 25px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 230px;
+}
+#login_screen input[type="submit"]:hover {
+    background-color: black;
+    border: 3px solid orange;
+    color: orange;
+}
+#login_screen input[type="submit"]:active {
+    border: 3px solid yellowgreen;
+    color: yellowgreen;
+}
+
+#login_screen .error {
+    background-color: rgb(190, 30, 68);
+    border: 3px solid red;
+    color: white;
+}
+#login_screen .required {
+    background-color: lightgoldenrodyellow;
+}
+
+@media only screen and (min-width: 550px) {
+    header .logo {
+        width: 200px;
+    }
+    .logo {
+        width: 250px;
+    }
+    nav a {
+        font-size: 1rem;
+        padding: 2px 4px;
+        width: 80px;
+    }
+    a.register, a.back-login, header form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 700px) {
+    header form input[type="submit"] { /* Logout button */
+        width: 100px;
+    }
+    #login_screen input {
+        height: 34px;
+        width: 244px;
+    }
+    #login_screen input[type="submit"] {
+        height: 40px;
+        width: 250px;
+    }
+    .change_admin_pass h2 {
+        font-size: 24px;
+    }
+    .change_admin_pass p {
+        font-size: 1rem;
+    }
+    .change_admin_pass a {
+        font-size: 1.5rem;
+    }
+    .change_admin_pass ol {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    header form input[type="submit"] { /* Logout button */
+        width: 150px;
+    }
+    .change_admin_pass ol {
+        font-size: 1rem;
+        width: max-content;
+    }
+}
+
+/* @media only screen and (min-width: 1500px) {
+    
+} */
